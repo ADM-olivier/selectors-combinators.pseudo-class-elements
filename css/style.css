@@ -1,0 +1,80 @@
+#intro{
+    font-size: 20px;
+}
+div{
+    font-size: 30px;
+}
+#attributeSelector{
+    color: black important;
+    font-size: 20px;
+    margin-left: 15px;
+    font-weight: bolder;
+}
+a[href="https://www.facebook.com/"]{
+    color: green;
+    font-size: 30px;
+    font-weight: bolder;
+}
+span{
+    font-size: 40px;
+}
+
+#attributeSelectorAsterik{
+    color: brown;
+    font-size: 20px;
+    font-weight: bolder;
+}
+a[href*=google]{
+    color: black;
+    font-size: 30px;
+    font-weight: lighter;
+}
+#attributeSelectorDollarMark{
+    color: rgba(18, 14, 14, 0.499);
+    font-size: 20px;
+    font-weight: bolder;
+}
+a[href$="ge"]{
+    color: red;
+    font-size: 30px;
+}
+#attributeSelectorMore{
+    color: rgb(14, 4, 47);
+    font-size: 20px;
+    font-weight: bolder;
+}
+a[href^="http"]{
+    color: rgb(42, 9, 73);
+    font-weight: bolder;
+    font-size: 30px;
+}
+h5, #span{
+    color: rgb(10, 7, 93);
+    font-size: 30px;
+    font-weight: bolder;
+}
+#div span{
+    color: tomato;
+    font-size: 25px;
+    font-weight: bold;
+}
+#sDiv > h6{
+    color: RED;
+    font-size: 25px;
+    font-weight: bold;
+}
+.div h1 ~ span{
+    color: tomato;
+}
+div h1 + span{
+    font-size: 50px;
+}
+.DIV h2 + span{
+    color: tomato;
+    font-weight: bolder;
+    font-size: 45px;
+}
+#boloP{
+    color: black;
+    font-size: 50px;
+}

@@ -2,20 +2,154 @@
 <html>
     <head>
         <meta charset="utf8">
+        <link rel="stylesheet" href="css/style.css">
         <title>selectors/combinators/pseudo</title>
+        <link rel="stylesheet" href="attributeSelectorDollarMark">
     </head>
     <body>
-        <h1>hello world</h1>
+            <div id="intro">
+            <h1>hello world</h1>
+            <p>* this mark can style all elements in html tag, it influences all tag.</p>
+            <br>
+            <p>type selectors uses to target each tags in htm, f.e h3, h4, p, we write tags names in css sheet, and it targets all h3,h4 or p etc tags.</p>
+            <br>
+            <p>we use #id selectors to target specific tags, not all his kind/ we give id="--" in html tag and target them in css using #idName in css sheet.</p>
+            <br>
+            <p>class selector/ works same as id but we can give same class more than one and two ... tags, and we use dot '.className' to target tags in css sheet.
+                <br>and we can give more than one class to one specific html tags.
+                <br>we divede them using space class="firstclass secondClass" and our tag has two classes.
+            </p>
+            <br>
+            <br>
+        </div>
+        <h2>attribute selectors</h2>
+        <div id="attributeSelector">
+            <p>attribute selector/ is selects and targets tags with attribute/ some tags have attribute f.e:a href has attribute which is href="link"/ it targets elements with this attribute and it looks like that a[attribute](ატრიბუტს ვსვავთ ოთხკუთხედ ფრჩხილებში[ატრიბუტი])
+                <br>ატრიბუტი ასევე შეიძლება იყოს title ან alt in img tag, or src and etc.
+                <br>first tag name, then we put attbirue into[square shape braces.]
+            </p>
+            <p>example: <br>
+                <a href="https://www.facebook.com/" >facebook</a>
+        </div>
         <br>
-        <div>
-            <p>hello my friends</p>
-            <div>
-                <h3>we gonna select this h3 tag without class or id and we use selectors for that</h3>
-                <div>
-                    <h4>we gonna do same to h4 but using different method</h4>
-                </div>
+        <div id="attributeSelectorAsterik">
+            <p>we gonna seect our tag using attribute selector with asterik*</p>
+            <p>* if we use * with attribute selector, a[href*=example], it will select all tags, in whom attribute containes word we indicating/
+                <br>/ანუ თუ სადმე ატრიბუტში გვხვდება example  ან რასაც ჩვენ გავუწერთ იმ თაგებს ამოიღებს და მათ გასტილავს, მისი წერის სტილი კი შემდეგია= თეგის დასახელება/ატრიბუტი/ჯერ= ფიფქი მერე ტოლობა/და რაიმე სიტყვა ან რამდენიმე ასო რომელიც კონკრეტულ ატრიბუტში შედის
+                <br>ანუ a[attribute*=hintword/or keyword] da *ფიფქი ამ სიტყვას ეძებს ატრიბუტში როგორ დასაწყისში შუაში და ბოლოშიც/
+            </p>
+            <p>example <br>
+                <a href="https://google.com/" target="blank">google</a> აქ target da target=blank შესაძლოა გამოიყენო როგორც attribute/ასევე attribute რომელსაც აქ blank.</p>
+        </div>
+        <br>
+        <br>
+        <div id="attributeSelectorDollarMark">
+            <p>we gonna select tag using attribute selector with dolar mark</p>
+            <p>$ if we use $ dollar mark with attribute selector/it works same as *asterik but it only targets ones whom ends on idicated word
+                <br>f.e a[href$=.com]/ანუ hint ან key words ეძებს სტრიბუტის ბოლოში, განსხვავებით *ფიფქისა რომელიც ეძებს ბოლოშიც/შუაშიც და თავშიც
+            </p>
+            <p>example <br>
+                <a href="https://www.dk.ge" target="blank">dk jobs</a>
+            </p>
+        </div>
+        <br>
+        <br>
+        <div id="attributeSelectorMore">
+            <p>we gonna target our tag using attribute selector with more/less mark</p>
+            <p>^ if we use ^more mark with attribute selector, works same as * and $/asterik and dollar mark, unlike it searches hint words in the beggining of value 
+                <br>ანუ ეს ნიშანი ^ ეძებს values დასაწყისში hint/key words  და მუშობს ისევე როგორც ფიფქი და დოლარის ნიშანი, სინტაქსიც იგივეა.
+            </p>
+            <a href="http://www.youtube.com/">youtube</a>
+        </div>
+        <br>
+        <br>
+        <br>
+        <span>
+            *-everywhere
+            <br>
+            $-in the end
+            <br>
+            ^-in the beggining
+        </span>
+        <h2>here end attribute selecting</h2>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <h2>now we move on to group selecting, when we have to give same style more than one tag, we can select both of them in one css rule</h2>
+        <div id="comaSelecting">
+            <p>we gave use coma btw selectors to sekect more than one element in one rule
+                <br>
+            ანუ თუ სელექტორებს მძიმით გამოვყოფთ ჩვენ გავლენას ვახდენთ რამოდენიმე სელექტორზე ერთად ერთ CSS კოდში მაგ:p, h{blablaba} ამ ერთი კოდით ჩვენ ვსტილავთ p და h თეგებს ერთდროულად რათა არ დაგვჭირდეს მათი ცალ ცალკე გასტილვა
+            </p>
+            <span id="span">we gonna style span and h5 tag within one css rule</span>
+            <h5> we gonna style span and h5 tag within one css rule</h5>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>select parent and child tags/ this method called descendant combinator/ it works next: we use space( ) to target our elements
+            "div span"- code states that:select every span tag whose parent is div /or/select div's children all span tag. doesn;t matter child or grandchild/parent or grandparent.
+        </p>
+        <div id="div">
+            <span>i am div's son span</span>
+        </div>
+        <br>
+        <br>
+        <br>
+        <p>another method is we target exactly son not grandson or great grandson/უშუალო შვილი და არა შვილიშვილი
+        <br>
+        ამისთვის ვიყენებთ მეტობის ნიშანს "div > h6"-იძახის რომ divში არის მისი უშუალო შვილი h6,მხოლოდ შვილი და არა შვილიშვილი გასტილე.
+        </p>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div id="sDiv">მე ვარ div
+            <h6>მე ვარ დივის შვილი h6
+                <h4>ხოლო მე h6ის შვილი და div ის შვილიშვილი</h4>
+            </h6>
+            <br>
+            როგორც ვხედავთ გაისტილა h6 და h4 ხელუხლებელი დარჩა
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <p>compound selector is used to adjust two selector/ syntax is next: "a.href" states that every a tag who has href attribute it should meet the next coditions:first it should be a tag and second href attribute/ it want work if one of the conditions would be false.
+            <br>if we have another tag which meets one of the conditions if its a tag or has attribute it won't effect. meet both of the states is vital.
+        </p>
+        <br/>
+        <br/>
+        <br/>
+        <p>sibling combinator selects sibling tags/ if parent element has two children element we can target those childrens in one css rule/it doesn't apply grandchildren to child as its descendant combin ator and nont sibling</p>
+            <br/>but it only searches sibling tags below, not above. 
+            <br/>f.e::h1 p span h1 span h1" syntax is next:we want select p tags h1 siblings- p ~ h1 it will only target n=last two h1 but not first h1.
+        </p>
+        <div class="div">
+            <span>მე ვარ პირველი span</span>
+            <h1>მე ვარ h1</h1>
+            <p>მე ვარ </p>
+            <span> მე ვარ მეორე span</span>
+            <h2>მე ვარ h2</h2>
+            <span>მე კი მესამე span</span>
+            <i>პირველი</i>კოდი რომელიც გავწერეთ cssში, მან გასტილა მეორე და მესამე spanები და არა პირველი რადგან sibling combinator ეძებს და-ძმებს მის შემდეგ გაწერილ ელემენტებში და არა მაქამდე გაწერილებში/
+            <br><i>მეორე</i>რითიც დავასელექტეთ 'div h1 ~ span - "გულისხმობს რომ მშობელი divის შვილებში დაასელექტე h1ის spanდედმამიშვილი."
+            <p>ასევე არის მეზობელი დედმამიშვილის სელექტორი, რომელიც უშუალოდ მის მეზობელ დედმამიშვილს ათარგეთებს, ანუ მე შემდეგ პირველ მეზობელ დედმამიშვილს და არა მესამე მეზობელ დედმამიშვილს
+                <br>მისი syntax- თუ დედმამიშვილებში ვიყენებდით ~კლაკნილ ნიშანს/მეზობელ დედმამიშვილს ვასელექტებთ +პლიუს ნიშნით: h1 + span 
+                <br>ამ შემთხვევაში არ დაასელეტა რადგან h1ს არ ყავს უშუალო მეზობელი span დედმამიშვილი
+                <br>მოდი თავიდან ვცადოთ:
+            </p>
+            <div class="DIV">
+                <h2>მე ვარ h2</h2>
+                <span>მე ვარ h2ის მეზობელი დედმამიშვილი span</span>
+                <h3>მე ვარ h3</h3>
+                <p>მე კი p</p>
+                <span>მე ვარ h2ის უბრალოდ მეზობელი span და მე მეზობელი დედმამიშვილი დასელექტებით არ გავისტილები</span>
             </div>
         </div>
-        
+        <p id="boloP">that was part 1 of selectors and combinators/ we didn't cover pseudo:class and pseudo:elements. see you there მშვიდობით არა ნახვამდის.</p>
     </body>
 </html>
