@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selectors and combinators</title>
+    <link rel="stylesheet" href="css/selectors.css">
+</head>
+<body>
+    <h1 class="id">hello world</h1>
+    <h1 class="hh">hello wolrd</h1>
+    <a href="https://wwww.facebook.com/">click here</a>
+    <br>
+    <br>
+    <a href="https://www.adjaranet.to/" target="_blank">click here for movies</a>
+    <br>
+    <br>
+    <a href="https://www.dk.ge/">dk jobs</a>
+    
+    <h3 class="hhh">lets try adjust two selector</h3>
+    <h3>i am h3</h3>
+    
+    
+    <!-- that was exercises for selectors only, not combinators and sibling selector. -->
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!--now we try exercises for sibing/parent cominators and selectors-->
+    <!-- sibling and parent selectors are divide in 2parts and each also 2parts so 4 in total -->
+    <h2>first, parent selectors are divided into 2 parts</h2>
+    <p>one which targets all his descedants, and second his direct descedant only son and not grandsons</p> 
+    <p>first is one which sellects all his descedants we use space btw elements parent and childrens:
+    <br>div p, div h2, div span which means in div parent target all p,h2 and span elements,
+    by the way p,h2 and span aren't necessary to be direct son of div element they can be grandson or p can be h2's son. but as long descedant selector targets all elements within tag.
+    we write div before every element to specify we want descedant selection
+    <br>f.e: div p,h2-means div's son p and all h2 element/ div p, div h2 means- p and h2 whose parent are div.
+    </p>   
+    <div class="div">
+        <p>i'm P</p>
+        <h2>i'm h2</h2>
+        <p>
+            <h3>i'm h3 <span>i'm span, my father is h3tag</span>
+            </h3>
+        </p>
+        <i>i'm italic i in short</i>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>and second target only son elements and not descedant elements, no matter if we try totarget same elements, if it isn't direct son it won't be selected 
+        <br>formula: div > h2/ we use more/less mark and selectors name, it can be class or id as well.
+    </p>
+
+    <div class="fdiv">
+        <h3>
+            <i> i'm i, my parent is h3</i>and <span>i am span, i'son and h3 grandson</span>
+        </h3>
+        <h5>i'm second h5</h5>
+        <div>
+            <h5>i'm first h5</h5>
+        </div>
+        <p>i'm P</p>
+        <b>i'm bold b in short</b>
+        <h6>i'm h6</h6>
+    </div>
+    <!-- that was ddescedant selector -->
+    <!-- shortly review sibling selectors and we finish it also includes two parts -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <p>we target sibling selectors ~ that mark, which tergets all sibling, no  matter sequence.</p>
+    <p>im p</p>
+    <h6>i'm h6</h6>
+    <h4>i'm h4</h4>
+    <!-- we have h4 which is p sibling, so target only h4 whose sibling is p -->
+    <br>
+    <br>
+    <p>and direct sibling, which should exactly next to element in sequence, first after element not second or third 
+        <br> h6 + h2
+    </p>
+    <span>i'm span</span>
+    <h6>i'm h6</h6>
+    <h5>i'm h5</h5>
+    <h6>i' m second h6</h6>
+
+
+</body>
+</html>

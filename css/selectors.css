@@ -1,0 +1,78 @@
+body{
+    font-size: 25px;
+}
+/* there is 4 rule to select element with attribute 
+first attribute itself*/
+a[href*=".com"]{
+    color: rgb(149, 41, 22);
+    font-size: 40px;
+}
+/* second rule is using hint or keywords attribute with *--$--^ this 3 mark
+first *asterik is to search hintword in attribute
+second $dollar mark is to search hitnword in the end of attribute such as .com or .net and so on
+third ^more-less mark is to search hint words in the beggining such as https or http and so on.*/
+a[href^="https"]{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+a[href$=".com"]{
+    background-color: black;
+}
+a[target]{
+    color: red;
+    background-color: black;
+}
+a[href$=".to/"]{
+    color: green;
+}
+
+a[href$=".ge/"] {
+    color: blue;
+    font-size: 40px;
+}
+
+/* lets try compund selector anu adjust two selector together, if we have two same element we can connect the together, so we will influence on the one we want, it works next:it should meet both statements first element then class or id f.e:h3.container */
+h3.hhh{
+    color: aquamarine;
+}
+
+
+/* lets try descedant selector */
+.div p{
+    color: aqua;
+    font-size: larger;
+    display: block;
+}
+
+.div span{
+    color: rgb(84, 25, 14);
+    font-size: 30px;
+    font-family: italic;
+}
+.fdiv > h3{
+    color: blueviolet;
+}
+.fdiv > h5{
+    color: aqua;
+}
+
+
+
+
+p ~ h4{
+    color: brown;
+}
+span + h6{
+    color: rgb(6, 197, 70);
+    font-size: 35px;
+}
+
+
+
+
+
+
+
+
+
+
+
